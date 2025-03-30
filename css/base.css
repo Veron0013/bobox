@@ -1,7 +1,7 @@
 :root {
-	font-family: Inter, sans-serif;
+	font-family: Sora, sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.62;
 	font-weight: 400;
 
 	--main-bg-light: #fff;
@@ -24,6 +24,7 @@ html {
 }
 
 body {
+	width: 100%;
 	background-color: var(--main-bg-light);
 	color: var(--text-color-light);
 	padding: 0;
@@ -48,6 +49,7 @@ h6 {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 img {
