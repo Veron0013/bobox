@@ -1,5 +1,3 @@
-# speech-gen-01
+# bobox
 
-Пишу для того, щоб не забути ЦСС/ХТМЛ
-Щоб навчитися працювати з яваскрипт по АПІ
-Щоб навчитися працювати з медіа
+https://www.figma.com/design/STck2I3Q1SffevJ56qKkEi/Bobox?node-id=5-318&p=f&t=7MH2PZ4SQUUPaIuL-0
