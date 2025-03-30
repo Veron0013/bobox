@@ -63,7 +63,11 @@ button {
 }
 
 .container {
-	max-width: 1900px;
+	max-width: 1400px;
 	padding: 0 190px;
 	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
 }
