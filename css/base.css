@@ -1,0 +1,67 @@
+:root {
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+
+	--main-bg-light: #fff;
+	--main-txt-light: #0000;
+	--main-orange: #ff4f22;
+	--main-green: #6c3;
+	--main-blue: #6cf;
+
+	--button-txt-light: #fff;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--main-bg-light);
+	color: var(--text-color-light);
+	padding: 0;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1900px;
+	padding: 0 190px;
+	margin: 0 auto;
+}
