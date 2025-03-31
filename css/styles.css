@@ -1,6 +1,6 @@
 .header {
 	max-width: 100%;
-	position: relative;
+	/*position: relative;*/
 	margin: 0 auto;
 }
 
@@ -10,6 +10,8 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
+	max-height: 88px;
+	max-width: 1840px;
 	transform: translateX(-50%);
 	display: flex;
 	flex-direction: row;
@@ -34,14 +36,73 @@
 	gap: 50px;
 }
 
-.header_items {}
+.header_items {
+	position: relative;
+}
 
-.header_item_link {}
+.header_items:hover .header_portfolio_list,
+.header_lang:hover .lang_list {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.header_item_link,
+.lang_selector {
+	position: relative;
+	display: flex;
+	gap: 5px;
+	z-index: 5;
+}
+
+.header_item_link:hover,
+.header_item_link:active {
+	color: var(--main-orange);
+}
+
+/* submenu */
+.header_portfolio_list,
+.lang_list {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	left: -20px;
+	top: -11px;
+	padding: 45px 20px 15px 20px;
+	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.08);
+	background: #fff;
+	gap: 5px;
+	transition: opacity 0.3s ease, visibility 0.3s ease, pointer-events 0.3s;
+}
+
+.header_portfolio_item {}
+
+.header_portfolio_link {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--second-txt-light);
+
+}
+
+.header_portfolio_link:hover,
+.header_portfolio_link:active,
+.lang_id:hover,
+.lang_id:active {
+	color: var(--main-orange);
+}
+
 
 .header_end {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 380px;
+}
+
+.header_lang {
+	position: relative;
 }
 
 .header_lang li {
@@ -49,18 +110,22 @@
 }
 
 .lang_selector {
-	display: block;
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	min-width: 135px;
-
+	min-width: 62px;
 }
 
-.lang_id {}
+.lang_id {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 162%;
+	color: var(--second-txt-light);
+}
 
 .search_button {
-	display: inline-block;
+	display: flex;
+	gap: 5px;
 	background-color: var(--main-orange);
 	color: var(--button-txt-light);
 	font-weight: 700;
@@ -74,4 +139,10 @@
 
 .search_button span {
 	display: inline;
+}
+
+/* hero */
+.hero .container {
+	margin-top: 88px;
+	padding: 0;
 }

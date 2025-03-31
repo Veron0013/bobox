@@ -6,6 +6,7 @@
 
 	--main-bg-light: #fff;
 	--main-txt-light: #0000;
+	--second-txt-light: #656565;
 	--main-orange: #ff4f22;
 	--main-green: #6c3;
 	--main-blue: #6cf;
@@ -63,7 +64,7 @@ button {
 }
 
 .container {
-	max-width: 1400px;
+	max-width: 1900px;
 	padding: 0 190px;
 	margin: 0 auto;
 }
