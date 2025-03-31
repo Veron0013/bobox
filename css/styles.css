@@ -11,7 +11,6 @@
 	top: 0;
 	left: 50%;
 	max-height: 88px;
-	max-width: 1840px;
 	transform: translateX(-50%);
 	display: flex;
 	flex-direction: row;
@@ -144,5 +143,6 @@
 /* hero */
 .hero .container {
 	margin-top: 88px;
-	padding: 0;
+
+	padding: 0 30px;
 }
