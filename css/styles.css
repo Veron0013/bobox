@@ -141,8 +141,32 @@
 }
 
 /* hero */
+.hero {
+	background-image: url(/img/Banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 832px;
+}
+
 .hero .container {
 	margin-top: 88px;
-
 	padding: 0 30px;
+}
+
+.hero_title {
+	padding-top: 68px;
+	padding-left: 68px;
+}
+
+.hero_title,
+.txt-rotate {
+	color: var(--button-txt-light);
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 143%;
+	letter-spacing: 0.05em;
+}
+
+.hero_wrap {
+	border-right: 0.1em solid var(--button-txt-light);
 }
