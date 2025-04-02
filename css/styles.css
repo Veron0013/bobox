@@ -142,7 +142,7 @@
 
 /* hero */
 .hero {
-	background-image: url(/img/Banner.jpg);
+	background-image: url("/img/Banner.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 832px;
