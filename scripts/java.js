@@ -23,20 +23,42 @@ class Typewriter {
 
 		this.element.innerHTML = `<span class="hero_wrap">${this.txt}</span>`;
 
+		//тут, бо вже є літера
+		const heroWrap = document.querySelector('.hero_wrap');
+
 		let delta = 180 - Math.random() * 100;
 
 		if (this.isDeleting) delta /= 2;
 
 		if (!this.isDeleting && this.txt === fullTxt) {
 			delta = this.period;
-			this.isDeleting = true;
-		} else if (this.isDeleting && this.txt === '') {
+
+			//моргання
+			this.blinkCursor(heroWrap, 3, () => {
+				this.isDeleting = true;
+				this.type();
+			});
+			return;
+		}
+		else if (this.isDeleting && this.txt === '') {
 			this.isDeleting = false;
 			this.loopNum++;
 			delta = 500;
 		}
 
 		setTimeout(() => this.type(), delta);
+	}
+
+	blinkCursor(element, times, callback) {
+		let count = 0;
+		const blinkInterval = setInterval(() => {
+			element.style.borderColor = (element.style.borderColor === "transparent") ? "var(--button-txt-light)" : "transparent";
+			count++;
+			if (count >= times * 2) { // times * 2 because blink includes turning off and on
+				clearInterval(blinkInterval);
+				if (callback) callback();
+			}
+		}, 400);
 	}
 }
 
