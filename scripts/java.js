@@ -1,4 +1,4 @@
-let mWords = ['Design', 'Innovations', 'Reputation', 'Cyber Punk 2077'];
+let mWords = ['Если тебя незаслуженно обидели, вернись и заслужи', 'Innovations', 'Reputation', 'Cyber Punk 2077'];
 
 class Typewriter {
 	constructor(element, words, period = 2000) {
